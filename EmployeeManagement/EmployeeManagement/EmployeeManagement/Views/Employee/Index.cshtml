@@ -5,3 +5,40 @@
 }
 
 <h1>Hat funktioniert</h1>
+
+<form asp-action="CreateEdit">
+    <button class= "btn btn-primary" type="submit">+Create Employee</button>
+</form>
+
+
+<table class= "table table-dark table-striped table-hover">
+    <thead>
+        <th>ID</th>
+        <th>Vorname</th>
+        <th>Nachname</th>
+    </thead>
+
+    <tbody>
+        @{
+            foreach(Employee employee in ViewBag.Employees)
+            {
+                <tr>
+                    <td>
+                        @employee.Id
+                    </td>
+                    <td>
+                        @employee.Prename
+                    </td>
+                    <td>
+                        @employee.Lastname
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+
+<div>
+    @ViewBag.Employees.Count
+</div>

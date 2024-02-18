@@ -144,3 +144,4 @@ C:\Users\Mattia\Projects_C#\C#-Playground\EmployeeManagement\EmployeeManagement\
 C:\Users\Mattia\Projects_C#\C#-Playground\EmployeeManagement\EmployeeManagement\EmployeeManagement\obj\Debug\net8.0\EmployeeManagement.pdb
 C:\Users\Mattia\Projects_C#\C#-Playground\EmployeeManagement\EmployeeManagement\EmployeeManagement\obj\Debug\net8.0\EmployeeManagement.genruntimeconfig.cache
 C:\Users\Mattia\Projects_C#\C#-Playground\EmployeeManagement\EmployeeManagement\EmployeeManagement\obj\Debug\net8.0\ref\EmployeeManagement.dll
+C:\Users\Mattia\Projects_C#\C#-Playground\EmployeeManagement\EmployeeManagement\EmployeeManagement\obj\Debug\net8.0\EmployeeManagement.sourcelink.json

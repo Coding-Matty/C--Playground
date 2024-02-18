@@ -1,4 +1,5 @@
 ﻿using EmployeeManagement.Data;
+using EmployeeManagement.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EmployeeManagement.Controllers
@@ -14,7 +15,25 @@ namespace EmployeeManagement.Controllers
         public IActionResult Index()
         {
             var employees = _dbContext.Employees.ToList();
+            
+            ViewBag.Employees = employees;
+            
+            
             return View();
+        }
+
+        public IActionResult CreateEdit(int id) 
+        {
+            return View("CreateEditEmployee");
+        }
+
+        [HttpPost]
+        public IActionResult CreateEditEmployee(Employee employee)
+        {
+            _dbContext.Employees.Add(employee);
+            _dbContext.SaveChanges();
+
+            return RedirectToAction("Index");
         }
     }
 }

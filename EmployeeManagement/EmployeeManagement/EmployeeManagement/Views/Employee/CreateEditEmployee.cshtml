@@ -1,0 +1,40 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model EmployeeManagement.Models.Employee
+
+
+Create/Edit
+
+<div class="card">
+    <div class="card-header">
+        <h5>Edit or Create an Employee</h5>
+    </div>
+
+    <form asp-action="CreateEditEmployee" method="post">
+        <div class="card-body">
+            <div class="row">
+                <div class="col">
+                    <input hidden asp-for="Id" placeholder="Id" class="form-control" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <input asp-for="Prename" placeholder="Vorname" class="form-control" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <input asp-for="Lastname" placeholder="Nachname" class="form-control" />
+                </div>
+            </div>
+        </div>
+
+        <div class="card-footer">
+            <button type="submit" class="btn btn-primary">Speichern</button>
+        </div>
+    </form>
+    
+</div>
